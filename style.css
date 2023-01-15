@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.apresentation {
+  height: 90vh;
+  background-image: url(/img/home-lizimoveis.jpg);
+  background-position: center center;
+
+  background-size: cover;
+  color: #ffff;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+
+  padding: 3% 15%;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.social-icon {
+  cursor: pointer;
+  margin: 10px;
+  margin-bottom: 2%;
+  color: #ffff;
+
+  border-radius: 10%;
+}
+
+.whatsapp-float {
+  cursor: pointer;
+  margin: 10px;
+  color: #ffff;
+  background-color: #00ff7f;
+  border-radius: 8%;
+}
+
+.whatsapp-float:hover {
+  background-color: #056334;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+footer {
+  color: #ffff;
+}
+
+.whatsapp {
+  position: fixed;
+}
+
+.btn {
+  margin: 10px;
+  padding: 10px;
+}
+
+.btn-whatsapp {
+  background-color: rgb(7, 181, 7);
+  color: #ffff;
+}
+
+.btn-whatsapp:hover {
+  background-color: #056334;
+  color: #ffff;
+}
+
+.tittleimob {
+  margin-top: 3%;
+}
+
+.gallery {
+  column-count: 4;
+  column-gap: 10px;
+}
+
+.img-gallery {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.localization {
+  margin: 2% 2%;
+  align-items: center;
+}
+
+.maps {
+  margin: 2% 0;
+}
+
+.box {
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  right: 1rem;
+  bottom: 8rem;
+  margin-right: 5%;
+}
+.show-financing {
+  margin-bottom: 2rem;
+}
+
+.price {
+  margin-top: 2rem;
+  background-color: #00ff7f;
+  font-weight: bold;
+}
+
+.img-start {
+  max-width: 700px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+}
