@@ -3,6 +3,89 @@
   padding: 0;
 }
 
+.gallery {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 100vh;
+  background: #ddd;
+}
+
+.gallery h1 {
+  font-size: 40px;
+  font-weight: normal;
+  padding: 15px;
+  color: #333;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.gallery .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.gallery .image-gallery .image {
+  height: 240px;
+  width: 350px;
+  border: 10px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery .image-gallery .image .img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.2s linear;
+}
+
+.gallery .image-gallery .image:hover img {
+  transform: scale(1.1);
+}
+
+.gallery .popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.gallery .popup-image span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.gallery .popup-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  border-radius: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .gallery .popup-image img {
+    width: 95%;
+  }
+}
+
 body {
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -81,17 +164,6 @@ h1.tittle {
 
 .tittleimob {
   margin-top: 3%;
-}
-
-.gallery {
-  column-count: 4;
-  column-gap: 10px;
-}
-
-.img-gallery {
-  width: 100%;
-  border-radius: 4px;
-  margin-bottom: 10px;
 }
 
 .localization {
